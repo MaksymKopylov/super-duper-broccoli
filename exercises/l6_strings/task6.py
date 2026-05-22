@@ -1,11 +1,19 @@
-# Write a function that removes any whitespaces
-# from string `s`
-def clean(s: str) -> str:
-    pass
+# Write a function that returns True if
+# string `s` contain vowels (A, E, I, O, U, a, e, i, o, u)
+# and False otherwise
+def contains_vowels(s: str) -> bool:
+    vowels = ("A", "E", "I", "O", "U", "a", "e", "i", "o", "u")
+    for char in s:
+        if char in vowels:
+            return True
+    return False
 
+
+print(contains_vowels(""))
 
 # Do not change the below's code
 if __name__ == "__main__":
-    assert clean("    c     ") == "c"
-    assert clean("  d  d c ") == "ddc"
-    assert clean("   ") == ""
+    assert contains_vowels("aghfn") is True
+    assert contains_vowels("bnv") is False
+    assert contains_vowels("AER") is True
+    assert contains_vowels("LKU") is True
