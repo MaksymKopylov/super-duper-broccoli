@@ -4,6 +4,10 @@
 #
 # HINT:
 # Use *
+def count_params(*args):
+    return len(args)
+
+print(count_params(3, 9, 6, 4, 3, 2,))
 
 # Do not change the below's code
 if __name__ == "__main__":

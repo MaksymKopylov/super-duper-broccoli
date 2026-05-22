@@ -1,6 +1,8 @@
 def odd_str(n: int) -> str:
     s = ""
-
+    for i in range(1, n + 1):
+        if i % 2 != 0:
+            s += str(i)
     # Use for loop to run from 0 to n (included) 
     # and form a string `s`.
     # String `s` will contain only odd numbers from interval [0; n].
@@ -10,7 +12,7 @@ def odd_str(n: int) -> str:
     # (0, 1, 2, 3, 4, 5, 6) -> "135" 
 
     return s
-
+print(odd_str(8))
 
 # Do not change the below's code
 if __name__ == "__main__":

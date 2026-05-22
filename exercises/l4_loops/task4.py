@@ -3,7 +3,25 @@
 #
 # Return `None`, if list is empty
 def find_max(l: list[int]) -> int | None:
-    pass
+    if not l:
+        return None
+    else:
+        current = l[0]
+        for n in l[1:]:
+            if n > current:
+                current = n
+        return current
+
+print(find_max([3, 1, 4, 3, 8, 7]))
+
+
+
+# Do not change the below's code
+if __name__ == "__main__":
+    assert find_max([3, 1, 4, 3]) == 4
+    assert find_max([3, 1, 4, 3, 8, 7]) == 8
+    assert find_max([1]) == 1
+    assert find_max([]) == None
 
 
 # Do not change the below's code

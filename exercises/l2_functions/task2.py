@@ -5,7 +5,13 @@
 # by whitespace ' '.
 #
 # For example, call of `join("a", "b")` should return "a b"
+if __name__ == "__main__":
+    a, b = "Jon", "Doe"
 
+def join(s1, s2):
+    return s1 + " " +s2
+
+print(join(a, b))
 
 # Do not change the below's code
 if __name__ == "__main__":
